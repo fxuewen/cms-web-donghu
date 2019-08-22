@@ -1,0 +1,117 @@
+#app .content-container {
+  overflow: hidden;
+}
+#app .content-container .side {
+  float: left;
+  width: 258px;
+}
+#app .content-container .side .logo {
+  height: 258px;
+  background-image: url(../images/level2_logo.png);
+  color: #fff;
+}
+#app .content-container .side .logo .text {
+  display: inline-block;
+  position: absolute;
+}
+#app .content-container .side .logo .text.text1 {
+  font-size: 31px;
+  top: 62px;
+  left: 79px;
+}
+#app .content-container .side .logo .text.text2 {
+  font-size: 14px;
+  top: 116px;
+  left: 68px;
+}
+#app .content-container .side .logo .text.text3 {
+  font-size: 26px;
+  top: 136px;
+  left: 160px;
+}
+#app .content-container .side .nav {
+  background: #fff;
+  margin-top: 16px;
+  padding: 24px 0;
+}
+#app .content-container .side .nav li {
+  height: 42px;
+  line-height: 42px;
+  padding-left: 24px;
+}
+#app .content-container .side .nav li.active {
+  background: #f9f8f4;
+  border-left: 2px solid #2488dd;
+}
+#app .content-container .side .nav li:hover {
+  background: #f9f8f4;
+}
+#app .content-container .side .nav li a {
+  display: inline-block;
+  cursor: pointer;
+  height: 100%;
+  width: 100%;
+  text-align: left;
+}
+#app .content-container .main {
+  float: right;
+  width: 854px;
+  background-color: #fff;
+  padding: 12px 32px;
+  min-height: 520px;
+}
+#app .content-container .main .header {
+  border-bottom: 1px solid #ddd;
+  height: 32px;
+  line-height: 32px;
+  text-align: left;
+}
+#app .content-container .main .header span {
+  display: inline-block;
+}
+#app .content-container .main .header .icon {
+  width: 14px;
+  height: 14px;
+  background: url(../images/home_icon.png);
+}
+#app .content-container .main .header .text1 {
+  color: #999;
+}
+#app .content-container .main .content .item {
+  margin-top: 30px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+#app .content-container .main .content .item span {
+  display: inline-block;
+}
+#app .content-container .main .content .item .item-icon {
+  width: 84px;
+  height: 84px;
+  background-image: url(../images/img_border.png);
+}
+#app .content-container .main .content .item .item-content {
+  position: relative;
+  margin-left: 14px;
+  width: 750px;
+  height: 84px;
+  top: -24px;
+}
+#app .content-container .main .content .item .item-content .title {
+  font-size: 14px;
+  font-weight: bold;
+  cursor: pointer;
+}
+#app .content-container .main .content .item .item-content .title:hover {
+  color: #2488dd;
+  text-decoration: underline;
+}
+#app .content-container .main .content .item .item-content .text {
+  position: relative;
+  top: 12px;
+  font-size: 12px;
+  color: #999;
+}
+#app .content-container .main .content .pagination {
+  margin-top: 60px;
+}

@@ -1,0 +1,39 @@
+@selectColor: #2488dd;
+#app {
+  .content-container {
+    background: #fff;
+
+    .header {
+      border-bottom: 1px solid #ddd;
+      height: 38px;
+      line-height: 38px;
+      text-align: left;
+
+      span {
+        display: inline-block;
+      }
+
+      .current-title {
+        color: @selectColor;
+        font-weight: bold;
+        padding: 0 24px;
+        border-bottom: 2px solid @selectColor;
+      }
+
+      .breadcrumb {
+        float: right;
+        margin-right: 16px;
+
+        .icon {
+          width: 14px;
+          height: 14px;
+          background: url(../images/home_icon.png);
+        }
+
+        .text1 {
+          color: #999;
+        }
+      }
+    }
+  }
+}

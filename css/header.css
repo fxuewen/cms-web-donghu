@@ -1,0 +1,117 @@
+.header-container {
+  width: 100%;
+  position: relative;
+  height: 272px;
+}
+.header-container .center-line {
+  position: relative;
+  text-align: left;
+  height: 85px;
+  top: 72px;
+}
+.header-container .center-line .left {
+  float: left;
+  margin-right: 12px;
+}
+.header-container .center-line .right {
+  float: right;
+}
+.header-container .center-line .text-cn {
+  font-size: 26px;
+  font-weight: bold;
+  margin-top: 6px;
+}
+.header-container .center-line .text-en {
+  font-size: 14px;
+  margin-top: 16px;
+}
+.header-container .search-group {
+  margin: 0;
+  padding: 0;
+  margin-top: 24px;
+}
+.header-container .search-group input {
+  position: relative;
+  display: inline-block;
+  height: 30px;
+  line-height: 30px;
+  width: 300px;
+  left: 4px;
+  top: -2px;
+  outline: none;
+  border: 1px solid transparent;
+  background-color: #d4e1f4;
+  padding-left: 12px;
+}
+.header-container .search-group button {
+  height: 34px;
+  width: 52px;
+  font-size: 16px;
+  background-color: #2488dd;
+  border: 1px solid #2488dd;
+  outline: none;
+  color: #fff;
+  font-size: 14px;
+  cursor: pointer;
+}
+.header-container .nav {
+  height: 50px;
+  width: 100%;
+  position: relative;
+  padding: 0;
+  margin: 0;
+  top: 100px;
+  list-style: none;
+  /*在一个声明中设置所有的列表属性*/
+  background: url(../images/nav_bg.png);
+  clear: both;
+  text-align: center;
+}
+.header-container .nav li {
+  float: left;
+  line-height: 40px;
+  text-align: center;
+  position: relative;
+  width: 149px;
+  border-right: 1px solid #4382b8;
+}
+.header-container .nav li.last {
+  border-right: 1px solid transparent;
+}
+.header-container .nav li.active a {
+  border-bottom: 3px solid red;
+}
+.header-container .nav li a {
+  text-decoration: none;
+  color: #fff;
+  padding: 5px 10px;
+  display: block;
+  /* 在一级菜单中，鼠标放上去的样式 */
+}
+.header-container .nav li a:hover {
+  color: #fff;
+}
+.header-container .nav li ul {
+  position: absolute;
+  /*防止一级菜单随二级菜单变化而变化*/
+  left: 0px;
+  top: 40px;
+  display: none;
+  /* 鼠标放在一级菜单上，显示二级菜单 */
+}
+.header-container .nav li ul li {
+  float: none;
+  text-align: center;
+  margin-top: 2px;
+  background-color: #eee;
+}
+.header-container .nav li ul li a {
+  width: 80px;
+  /* 在二级菜单中，鼠标放上去的样式 */
+}
+.header-container .nav li ul li a:hover {
+  background-color: #eee;
+}
+.header-container .nav li:hover ul {
+  display: block;
+}

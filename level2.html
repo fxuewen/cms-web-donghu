@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>武汉东湖高新区人民检察院</title>
+    <link href="./css/header.css" rel="stylesheet" type="text/css" />
+    <link href="./css/footer.css" rel="stylesheet" type="text/css" />
+    <link href="./css/common.css" rel="stylesheet" type="text/css" />
+    <link href="./css/level2.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <div id="app">
+      <include src="./templates/header.html"></include>
+      <div class="content-container">
+        <div class="side">
+          <div class="logo">
+            <span class="text text1">检察</span>
+            <span class="text text2">INSPECTION</span>
+            <span class="text text3">文化</span>
+          </div>
+          <ul class="nav">
+            <li class="active"><a>精神文化</a></li>
+            <li><a>制度文化</a></li>
+            <li><a>行为文化</a></li>
+          </ul>
+        </div>
+        <div class="main">
+          <div class="header">
+            <span class="icon"></span>
+            <span class="text1">首页-检察文化-</span>
+            <span class="text2">精神文化</span>
+          </div>
+          <div class="content">
+            <ul class="news-list">
+              <li class="item">
+                <span class="item-icon"></span>
+                <span class="item-content">
+                  <a class="title">襄阳区检察院积极组织青年志愿者开展法制文化基层行活动</a>
+                  <div class="text">
+                    为了进一步增强全社会学法、尊法、守法的自觉性以及群众运用法治思维、法治方式思考问题、解决问题、化解矛盾、促进和谐的意识和能力。（这里是一串文字，用来测试文字超长过后显示省略号的问题,这里是一串文字，用来测试文字超长过后显示省略号的问题）
+                  </div>
+                </span>
+              </li>
+            </ul>
+            <div class="pagination">
+              <ul>
+                <li><a href="#">上一页</a></li>
+                <li><a href="#">1</a></li>
+                <li><a class="active" href="#">2</a></li>
+                <li><a href="#">...</a></li>
+                <li><a href="#">6</a></li>
+                <li><a href="#">下一页</a></li>
+              </ul>
+              <span class="record"><span>共6页</span> <span>共计86条</span></span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <include src="./templates/footer.html"></include>
+    </div>
+    <script src="./js/include.js"></script>
+    <script src="./js/jquery.js"></script>
+    <script src="./js/default.js"></script>
+    <script>
+      // 热点新闻自动截取显示
+      $(function() {
+        const hotnewsArr = $('.news-list .item-content .text');
+        for (var i = 0; i < hotnewsArr.length; i++) {
+          var hotNewsDom = hotnewsArr[i];
+          var text = hotNewsDom.innerText;
+          var w = hotNewsDom.offsetWidth;
+          // 最多可显示的文字
+          var maxLen = (w * 2) / 12 - 10;
+          var newText = text.length > maxLen ? text.substr(0, maxLen) + '...' : text;
+          hotNewsDom.innerText = newText;
+        }
+      });
+    </script>
+  </body>
+</html>

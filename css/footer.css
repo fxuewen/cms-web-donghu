@@ -1,0 +1,31 @@
+.footer-container {
+  position: relative;
+  height: 80px;
+  margin-top: 40px;
+  margin-bottom: 60px;
+  font-size: 12px;
+}
+.footer-container .link a {
+  margin-left: 4px;
+  margin-right: 4px;
+}
+.footer-container .copyright {
+  margin-top: 16px;
+  color: #999;
+}
+.footer-container .address {
+  color: #999;
+  margin-top: 6px;
+}
+.footer-container .img-left {
+  position: absolute;
+  display: inline-block;
+  left: 100px;
+  top: 10px;
+}
+.footer-container .img-right {
+  position: absolute;
+  display: inline-block;
+  right: 100px;
+  top: 10px;
+}

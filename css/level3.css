@@ -1,0 +1,30 @@
+#app .content-container {
+  background: #fff;
+}
+#app .content-container .header {
+  border-bottom: 1px solid #ddd;
+  height: 38px;
+  line-height: 38px;
+  text-align: left;
+}
+#app .content-container .header span {
+  display: inline-block;
+}
+#app .content-container .header .current-title {
+  color: #2488dd;
+  font-weight: bold;
+  padding: 0 24px;
+  border-bottom: 2px solid #2488dd;
+}
+#app .content-container .header .breadcrumb {
+  float: right;
+  margin-right: 16px;
+}
+#app .content-container .header .breadcrumb .icon {
+  width: 14px;
+  height: 14px;
+  background: url(../images/home_icon.png);
+}
+#app .content-container .header .breadcrumb .text1 {
+  color: #999;
+}
