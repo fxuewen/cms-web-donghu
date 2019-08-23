@@ -90,6 +90,13 @@
   height: 84px;
   background-image: url(../images/img_border.png);
 }
+#app .content-container .main .content .item .item-icon img {
+  width: 76px;
+  height: 76px;
+  position: relative;
+  top: 4px;
+  left: 4px;
+}
 #app .content-container .main .content .item .item-content {
   position: relative;
   margin-left: 14px;
