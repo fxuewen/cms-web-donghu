@@ -28,3 +28,6 @@
 #app .content-container .header .breadcrumb .text1 {
   color: #999;
 }
+#app .content-container .content {
+  min-height: 500px;
+}
