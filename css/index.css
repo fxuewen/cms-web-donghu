@@ -250,7 +250,7 @@
   height: 100%;
 }
 #app .section7 {
-  margin-top: 12px;
+  margin-top: 16px;
   height: 334px;
 }
 #app .section7 .left {
@@ -262,6 +262,9 @@
 #app .section7 .left .message-list .message-item {
   height: 72px;
   border-bottom: 1px dashed #ddd;
+}
+#app .section7 .left .message-list .message-item.last {
+  border: none;
 }
 #app .section7 .left .message-list .message-item .icon {
   position: relative;
@@ -299,36 +302,58 @@
   text-overflow: ellipsis;
   white-space: nowrap;
 }
-#app .section7 .left .message-input {
-  margin-top: 24px;
+#app .section7 .right {
+  position: relative;
+  width: 24%;
+  height: 302px;
+  padding: 8px 24px 24px 24px;
+  background-color: #fff;
 }
-#app .section7 .left .message-input input {
+#app .section7 .right .form-item {
+  width: 100%;
+  position: relative;
+  margin-top: 16px;
+}
+#app .section7 .right .form-item input {
+  width: 100%;
   height: 32px;
-  border: none;
+  background-color: #fcfafb;
   outline: none;
+  border: 1px solid #e7e7e7;
+  text-indent: 16px;
 }
-#app .section7 .left .message-input input.text {
-  width: 612px;
-  padding-left: 12px;
-  background-color: #f8f8f8;
-}
-#app .section7 .left .message-input input.btn {
-  float: right;
-  width: 120px;
-  background-color: #2488dd;
+#app .section7 .right .form-item input.submit {
+  background-color: #2093e3;
+  color: #fff;
   cursor: pointer;
 }
-#app .section7 .right {
-  width: 26%;
+#app .section7 .right .form-item input.validate-text {
+  width: 142px;
 }
-#app .section7 .right.nav-links {
+#app .section7 .right .form-item .validate-img {
+  float: right;
+  width: 130px;
+  height: 36px;
+}
+#app .section7 .right .form-item textarea {
+  padding-top: 8px;
+  outline: none;
+  background-color: #fcfafb;
+  border: 1px solid #e7e7e7;
+  text-indent: 16px;
+  width: 284px;
+  resize: none;
+}
+#app .section8 {
+  padding: 24px;
   background-color: #fff;
-  padding: 0 16px 24px 16px;
-  padding-top: 0;
+  text-align: center;
+  margin: 0 auto;
+  margin-top: 16px;
 }
-#app .section7 .right.nav-links select {
-  width: 100%;
-  height: 30px;
-  margin-top: 32px;
-  appearance: none;
+#app .section8 select {
+  height: 36px;
+  width: 190px;
+  padding-left: 12px;
+  margin: 0 12px;
 }

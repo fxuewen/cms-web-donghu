@@ -481,48 +481,73 @@
                   <div class="bottom">这里是留言信息，欢迎踊跃留言</div>
                 </a>
               </li>
+              <li class="message-item last">
+                <div class="icon"></div>
+                <a class="content">
+                  <div class="top">
+                    <span class="name">刘丰：</span>
+                    <span class="time">2019-08-13 16:00</span>
+                  </div>
+                  <div class="bottom">这里是留言信息，欢迎踊跃留言</div>
+                </a>
+              </li>
             </ul>
-            <div class="message-input">
-              <input class="text" placeholder="请输入您要输入的留言内容"/>
-              <input class="btn" type="button" value="提交"/>
-            </div>
           </div>
         </div>
-        <div class="right nav-links">
-          <select>
-            <option>中央国家机关</option>
-            <option>中央国家机关</option>
-            <option>中央国家机关</option>
-            <option>中央国家机关</option>
-          </select>
-          <select>
-            <option>全市检察机关链接</option>
-            <option>全市检察机关链接</option>
-            <option>全市检察机关链接</option>
-            <option>全市检察机关链接</option>
-          </select>
-          <select>
-            <option>武汉东湖新技术开发区管委会</option>
-            <option>武汉东湖新技术开发区管委会</option>
-            <option>武汉东湖新技术开发区管委会</option>
-            <option>武汉东湖新技术开发区管委会</option>
-          </select>
-          <select>
-            <option>新闻媒体</option>
-            <option>新闻媒体</option>
-            <option>新闻媒体</option>
-            <option>新闻媒体</option>
-          </select>
-          <select>
-            <option>武汉市国家机关</option>
-            <option>武汉市国家机关</option>
-            <option>武汉市国家机关</option>
-            <option>武汉市国家机关</option>
-          </select>
-        </select>
+        <div class="right">
+          <form>
+              <div class="form-item">
+                <input placeholder="请输入您的姓名"/>
+              </div>
+              <div class="form-item">
+                <input class="validate-text" placeholder="请输入验证码"/>
+                <span class="validate-img">
+                  <img style="width: 100%; height:100%;">
+                </span>
+              </div>
+              <div class="form-item">
+                <textarea rows="8" placeholder="请输入留言内容"></textarea>
+              </div>
+              <div class="form-item">
+                <input type="button" class="submit" value="提交">
+              </div>
+          </form>
+        </div>
       </div>
+      <div class="section section8">
+        <select>
+            <option>中央国家机关</option>
+            <option>中央国家机关</option>
+            <option>中央国家机关</option>
+            <option>中央国家机关</option>
+          </select>
+          <select>
+            <option>全市检察机关链接</option>
+            <option>全市检察机关链接</option>
+            <option>全市检察机关链接</option>
+            <option>全市检察机关链接</option>
+          </select>
+          <select>
+            <option>武汉东湖新技术开发区管委会</option>
+            <option>武汉东湖新技术开发区管委会</option>
+            <option>武汉东湖新技术开发区管委会</option>
+            <option>武汉东湖新技术开发区管委会</option>
+          </select>
+          <select>
+            <option>新闻媒体</option>
+            <option>新闻媒体</option>
+            <option>新闻媒体</option>
+            <option>新闻媒体</option>
+          </select>
+          <select>
+            <option>武汉市国家机关</option>
+            <option>武汉市国家机关</option>
+            <option>武汉市国家机关</option>
+            <option>武汉市国家机关</option>
+          </select>
+      </div>
+      <include src="./templates/footer.html"></include>
     </div>
-    <include src="./templates/footer.html"></include>
     <script src="./js/include.js"></script>
     <script src="./js/jquery.js"></script>
     <script src="./js/default.js"></script>
