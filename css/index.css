@@ -260,47 +260,31 @@
   padding: 0 24px 24px 24px;
 }
 #app .section7 .left .message-list .message-item {
-  height: 72px;
+  position: relative;
+  padding: 12px 0;
+  height: 48px;
   border-bottom: 1px dashed #ddd;
 }
 #app .section7 .left .message-list .message-item.last {
   border: none;
 }
-#app .section7 .left .message-list .message-item .icon {
-  position: relative;
-  float: left;
-  width: 36px;
-  height: 36px;
-  background-color: #ddd;
-  top: 18px;
-}
 #app .section7 .left .message-list .message-item .content {
-  float: right;
-  width: 749px;
-  height: 72px;
+  width: 100%;
+  height: 48px;
+  overflow: hidden;
   cursor: pointer;
+  color: #666;
 }
-#app .section7 .left .message-list .message-item .content .top {
-  margin-top: 12px;
-  height: 24px;
-  line-height: 24px;
+#app .section7 .left .message-list .message-item .content:hover {
+  color: #42a0f8;
+  text-decoration: underline;
 }
-#app .section7 .left .message-list .message-item .content .top .name {
-  color: #418acd;
-}
-#app .section7 .left .message-list .message-item .content .top .time {
+#app .section7 .left .message-list .message-item .time {
+  position: relative;
   float: right;
   color: #999;
   font-size: 12px;
-}
-#app .section7 .left .message-list .message-item .content .bottom {
-  height: 24px;
-  line-height: 24px;
-  color: #666;
-  font-size: 12px;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
+  top: 6px;
 }
 #app .section7 .right {
   position: relative;
