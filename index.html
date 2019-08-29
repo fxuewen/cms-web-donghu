@@ -647,6 +647,9 @@
         const messageList = $('.message-list .message-item .content');
         for (var j = 0; j < messageList.length; j++) {
           var messageDom = messageList[j];
+          if (messageDom.offsetWidth < messageDom.parentNode.offsetWidth - 20) {
+            return;
+          }
           autoSplit(messageDom, 14);
         }
       });
